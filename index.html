@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Road Fatalies Across the United States</title>
+ 
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+  	<link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body style="background-color: skyblue">
+<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#">FARS MAPS</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-right">
+            	<li><a href="www.google.com">Other Page</a>
+                </li>
+                <li><a href="https://github.com/rjoseph01">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+	<div class="header">
+	<h1>Fatal Road Accidents in New York and New Jersey</h1>
+	<p><b>This map contains information pertaining to road fatalities occurring in New York and New Jersey in 2015.</b>
+	<br> <em>Select a point to view details about an accident. Doubleclick to deselect accidents.</em></p>
+	</div>
+	<div id="mapWindow">	
+	</div>
+	<div id="sidepanel">
+		<h2>Information Panel</h2>
+		<div id="toprow">
+			<span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+			<h3>Crash ID Number:</h3>
+			<h4>_______</h4>
+		</div>
+		<div id="secrow">
+			<span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span>
+			<h3>Vehicles Involved:</h3>
+			<h4>_______</h4>
+		</div>	
+		<div id="thirdrow">
+			<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+			<h3>Fatalities:</h3>
+			<h4>_______</h4>
+		</div>	
+		<div id="fourrow">
+			<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+			<h3>Date:</h3>
+			<h4>_______</h4>
+		</div>
+		<button type="button" class="btn btn-danger" id="reset">Reset Map</button>
+	</div>
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script  src="https://code.jquery.com/jquery-3.1.1.slim.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/nyaccdata15.js"></script>
+	<script src="js/njaccdata15.js"></script>
+  	<script src="js/scripts.js"></script>
+</body>
+</html>
